@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: rgb(216, 216, 216);
+}
+
+.page-wrapper {
+  width: 1200px;
+  margin: 0 auto;  
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*   HEADER  */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 70px;
+  padding: 70px;
+}
+
+.logo {
+  margin-right: auto;
+  font-size: 50px;
+  font-weight: 700;
+  background-image: -webkit-linear-gradient(180deg, #791d75, #583ff7);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.nav-itens {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  color: #666666;
+  width: 610px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 60px;
+}
+
+.nav-itens > a {
+  padding: 4px 8px;
+}
+/* borda da foto- linha 46 e no porfile*/
+
+.nav-itens > a:hover {
+  color: #791d75;
+}
+
+.social-medias {
+  width: 130px;
+  display: flex; 
+  
+}
+
+.social-medias > a {
+  height: 30px;
+  padding:0 10px;
+}
+
+/*   HEADER  */
+
+.section {
+  min-height: calc(100vh - 70px);
+  /* Tamanho da tela - tamanho do header  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.section-home {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  color:#583ff7;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text-profile {
+  font-size: 30px;
+  font-weight: 700;
+  
+}
+
+.name-profile {
+  font-size: 40px;
+  color: #791d75;
+  text-transform: uppercase;
+}
+
+.profile {
+  border-radius: 50%;
+  border: 10px solid transparent;
+  width: 400px;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(180deg, #791d75, #583ff7) border-box;
+}
+
+/* ABOUT */
+
+.main-sobre-mim {
+  /* min-height: calc(100vh - 140px); */
+  width: 100%;
+}
+
+.sobre-mim {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.sobre-mim h1{
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.experiencia-de-trabalho{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 100px; */
+  margin-bottom: 10px;
+}
+
+.educacao{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+
+.empregos,
+.educacao {
+  display: flex;
+  justify-content: space-between;
+}
+
+.informacao-trabalho,
+.informacao-educacao {
+  display: flex;
+  justify-content: space-between;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+.informacao-trabalho > div,
+.informacao-educacao > div {
+  display: flex;
+  margin: 10px 0;
+}
+
+
+.linha{
+    width: 100%;
+    border: 1px solid #ebeaed;
+}
+
+.titulos{
+    color: #583ff7 ;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+
+ /* ++++++ Informações Tecnicas ++++++ */
+
+.tiposDeTecnologia-main {
+  min-height: calc(100vh - 140px);
+  margin: 0 auto;
+}
+
+.minha-tecnologia {
+  display: flex;
+  margin: 0 auto;  
+  flex-direction: column;
+  margin-bottom: 200px;
+}
+
+.minha-tecnologia h1 {
+  margin-bottom: 10px;
+  color:  #583ff7;
+}
+
+.tiposDeTecnologia-icon {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 40px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.tecnologia-icons {
+  width: 100px;
+  height: 100px;
+}
+
+/********* Projetos *******/
+
+.projeto-main{
+  min-width: calc(100vh - 140px);
+  margin: 0 auto;
+  border: 1 px solid black;
+}
+
+.projeto{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.projeto h1{
+  color:  #583ff7;
+}
+
+.card-main{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+    
+}
+
+.card-projeto{
+  background-color: white;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 10px grey;
+  border-radius: 20px;
+  min-height: 600px;
+}
+
+.card-projeto:hover{
+  transform: scale(1.04);
+  transition: all ease 500ms;
+}
+
+.card-projeto h2{
+  color: #791d75;
+}
+
+.card-projeto h3{
+  font-weight: 200; 
+  margin: 0 10px;
+}
+
+.card-projeto img{
+  width: 450px;  
+  border-radius: 20px 20px 0px 0px;
+  
+}
+
+.projeto-icons{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.icons-linha{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+} 
+
+.icons-linha img {
+  margin: 0 5px;
+  width: 20px;
+}
+
+.icons-linha p{
+  margin-right: 50px;
+}
+
+/* +++++++++Contato+++++++ */
+
+.contato-main{
+  min-width:calc(100vh-140px);
+  margin: 0 auto; 
+}
+
+.contato{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 500px;
+  text-align: center;
+  background-image: linear-gradient(#791d75, #583ff7);
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  margin-top: 100px;
+}
+
+.footer{
+  margin-top: 10px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: end;
+  color: #791d75;
+}
